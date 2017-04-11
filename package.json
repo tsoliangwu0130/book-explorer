@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/tsoliangwu0130/js-learning/issues"
   },
-  "homepage": "https://github.com/tsoliangwu0130/js-learning#readme"
+  "homepage": "https://github.com/tsoliangwu0130/js-learning#readme",
+  "devDependencies": {
+    "webpack": "^2.3.3"
+  }
 }
