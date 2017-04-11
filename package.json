@@ -1,7 +1,7 @@
 {
   "name": "tsoliangwu",
   "version": "1.0.0",
-  "description": "JS learning",
+  "description": "ES6 learning",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
