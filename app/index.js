@@ -1,7 +1,17 @@
-let z = [4, 5, 6];
-let [a, b] = z;
-console.log(a, b);
+function cheer_01(){
+	console.log("Hello ES6 from cheer_01!");
+}
 
-let x = { name: 'Leon', num: 50 };
-let { name, num } = x;
-console.log(name, num);
+
+let cheer_02 = function(){
+	console.log("Hello ES6 from cheer_02!");
+}
+
+// Anonymous Function Style
+let cheer_03 = () => {
+	console.log("Hello ES6 from cheer_03!");
+}
+
+cheer_01();
+setTimeout(cheer_02, 3000);
+setTimeout(cheer_03, 5000);
