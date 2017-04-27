@@ -1,5 +1,16 @@
-import { add } from './math';
-import multiply from './math';
+class Animal {
+	constructor(name, height) {
+		this.name = name;
+		this.height = height;
+	}
 
-console.log(add(1, 2));
-console.log(multiply(2,3));
+	greeting() {
+		console.log(`Hello, I'm ${this.name}!`);
+	}
+}
+
+let king = new Animal("Lion", 4.5);
+console.log(king);
+console.log(king.name);
+console.log(king.height);
+king.greeting();
