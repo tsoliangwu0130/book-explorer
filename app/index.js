@@ -1,3 +1,5 @@
-let b = "wooh" + "oo".repeat(50);
+let word = "hello world";
 
-console.log(b);
+console.log(word.startsWith("hello"));
+console.log(word.endsWith("world"));
+console.log(word.includes("llo w"));
