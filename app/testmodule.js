@@ -1,2 +1,4 @@
 const arrayFromModule = ['a', 'b', 'c'];
-export { arrayFromModule };
+const arrayLength = arrayFromModule.length;
+
+export { arrayFromModule, arrayLength };

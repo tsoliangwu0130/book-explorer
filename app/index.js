@@ -1,3 +1,4 @@
-import { arrayFromModule } from './testmodule';
+import { add, multiply } from './math';
 
-console.log(arrayFromModule);
+console.log(add(1, 2));
+console.log(multiply(2,3));
