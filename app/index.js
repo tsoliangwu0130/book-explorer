@@ -1,9 +1,5 @@
-let a = new Set();
-a.add(5);
-a.add(43);
-a.add("Woohoo");
-a.add(5);
+let numbers = [1, 2, 3, 4, 5, 1];
+let numSet = new Set(numbers);
 
-console.log(a);
-console.log(a.size);
-console.log(a.has(5));
+console.log(numbers);
+console.log(numSet);
