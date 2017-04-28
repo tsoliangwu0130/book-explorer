@@ -3,3 +3,7 @@ let numSet = new Set(numbers);
 
 console.log(numbers);
 console.log(numSet);
+
+for(let element of numSet.values()) {
+	console.log(element);
+}
