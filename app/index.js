@@ -1,10 +1,6 @@
-let a = new Map();
-let key_1 = "string key"
-let key_2 = { a: 'key' };
-let key_3 = function() {};
+let numArr = [[1, 'one'], [2, 'two'], [3, 'three']];
+let numMap = new Map(numArr);
 
-a.set(key_1, 'return value from a string key');
-a.set(key_2, 'return value from an object key');
-a.set(key_3, 'return value from a function key');
-
-console.log(a);
+for (let [key, value] of numMap.entries()) {
+	console.log(`${ key } points to ${ value }`);
+}
