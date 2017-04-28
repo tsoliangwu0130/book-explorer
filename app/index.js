@@ -1,9 +1,5 @@
-let numbers = [1, 2, 3, 4, 5, 1];
-let numSet = new Set(numbers);
+let chars = 'aasdashjahlfhuhfuiqwhebjqwvlasfmvnjbj';
+let chars_arr = chars.split("");
+let chars_set = new Set(chars_arr);
 
-console.log(numbers);
-console.log(numSet);
-
-for(let element of numSet.values()) {
-	console.log(element);
-}
+console.log(chars_set);
