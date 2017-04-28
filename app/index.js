@@ -1,16 +1,9 @@
-function Wizard(name, house, pet) {
-	this.name = name;
-	this.house = house;
-	this.pet = pet;
+let a = new Set();
+a.add(5);
+a.add(43);
+a.add("Woohoo");
+a.add(5);
 
-	this.greet = () => `I'm ${ this.name } from ${ this.house }`;
-}
-
-Wizard.prototype.pet_name;
-Wizard.prototype.info = function() {
-	return `I have a ${ this.pet } named ${ this.pet_name }`;
-};
-
-let harry = new Wizard('Harry Potter', 'Gryffindor', 'Owl');
-harry.pet_name = 'Hedwig';
-console.log(harry.info());
+console.log(a);
+console.log(a.size);
+console.log(a.has(5));
