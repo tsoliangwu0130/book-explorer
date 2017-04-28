@@ -8,7 +8,7 @@ function Wizard(name, house, pet) {
 
 Wizard.prototype.pet_name;
 Wizard.prototype.info = function() {
-	return `I have a ${ this.pet } named ${ this.pet_name }`
+	return `I have a ${ this.pet } named ${ this.pet_name }`;
 };
 
 let harry = new Wizard('Harry Potter', 'Gryffindor', 'Owl');
