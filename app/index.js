@@ -1,9 +1,11 @@
-let call = () => {
-	let secret = "ES6 rocks!";
-	let revel = () => {
-		console.log(secret);
+const addSuffix = (x) => {
+	const concat = (y) => {
+		return y + x;
 	}
-	revel();
+	return concat;
 }
 
-call();
+let add_ness = addSuffix('ness');
+console.log(add_ness);
+let h = add_ness('happi');
+console.log(h);
