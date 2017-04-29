@@ -1,21 +1,16 @@
-const budge = () => {
-	let balance = 0;
-	let changeBal = (val) => {
-		return balance += val;
+function* evens() {
+	let count = 0;
+	while (true) {
+		count += 2;
+		let reset = yield count;
+		if (reset) {
+			count = 0;
+		}
 	}
-	const deposit20 = () => changeBal(20);
-	const withdraw20 = () => changeBal(-20);
-	const check = () => balance;
-
-	return { deposit20, withdraw20, check }
 }
 
-let wallet = budge();
-console.log(wallet);
-wallet.deposit20();
-wallet.deposit20();
-wallet.withdraw20();
-wallet.deposit20();
-wallet.withdraw20();
-console.log(wallet.check());
-console.log(wallet.balance); // undefined!
+let sequence = evens();
+console.log(sequence.next().value);
+console.log(sequence.next().value);
+console.log(sequence.next(true).value);
+console.log(sequence.next().value);
