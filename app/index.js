@@ -1,11 +1,10 @@
-const addSuffix = (x) => {
-	const concat = (y) => {
-		return y + x;
+const product = (x) => {
+	return y => {
+		return y * x;
 	}
-	return concat;
 }
 
-let add_ness = addSuffix('ness');
-console.log(add_ness);
-let h = add_ness('happi');
-console.log(h);
+let mult5 = product(5);
+console.log(mult5(3));
+let mult3 = product(3);
+console.log(mult3(3));
