@@ -1,8 +1,6 @@
-function* arrayIterator() {
-	yield* arguments;
-}
+let p = new Promise((resolve, reject) => {
+	setTimeout(() => resolve('Resolved promise data'), 3000);
+});
 
-var it = arrayIterator(1, 2, 3);
-console.log(it.next().value);
-console.log(it.next().value);
-console.log(it.next().value);
+p.then(response => console.log(response))
+ .catch(error => console.log(error));
