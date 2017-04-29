@@ -1,16 +1,8 @@
-function* evens() {
-	let count = 0;
-	while (true) {
-		count += 2;
-		let reset = yield count;
-		if (reset) {
-			count = 0;
-		}
-	}
+function* arrayIterator() {
+	yield* arguments;
 }
 
-let sequence = evens();
-console.log(sequence.next().value);
-console.log(sequence.next().value);
-console.log(sequence.next(true).value);
-console.log(sequence.next().value);
+var it = arrayIterator(1, 2, 3);
+console.log(it.next().value);
+console.log(it.next().value);
+console.log(it.next().value);
