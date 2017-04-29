@@ -1,6 +1,19 @@
-const product = x => y => y * x;
+const budge = () => {
+	let balance = 0;
+	let changeBal = (val) => {
+		return balance += val;
+	}
+	const deposit20 = () => changeBal(20);
+	const check = () => balance;
 
-let mult5 = product(5);
-console.log(mult5(3));
-let mult3 = product(3);
-console.log(mult3(3));
+	return {
+		deposit20: deposit20,
+		check: check
+	}
+}
+
+let wallet = budge();
+console.log(wallet);
+wallet.deposit20();
+console.log(wallet.check());
+console.log(wallet.balance); // undefined!
