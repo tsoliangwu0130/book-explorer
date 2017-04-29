@@ -1,8 +1,4 @@
-const product = (x) => {
-	return y => {
-		return y * x;
-	}
-}
+const product = x => y => y * x;
 
 let mult5 = product(5);
 console.log(mult5(3));
